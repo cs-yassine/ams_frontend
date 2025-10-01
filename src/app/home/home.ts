@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class Home {
  university:string="Sesame";
- students:string[]=["yassine","faten","ayoub","fares","jihen","ghassen","aziz","amine","sabrine","farah"]
+ names:string[]=["yassine","faten","ayoub","fares","jihen","ghassen","aziz","amine","sabrine","farah"]
  nbrEtudiants :number=26;
 }

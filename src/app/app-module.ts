@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Home } from './home/home';
 import { Contact } from './contact/contact';
+import { BeginWithUpperPipe } from './pipes/begin-with-upper-pipe';
 
 @NgModule({
   declarations: [
     App,
     Home,
-    Contact
+    Contact,
+    BeginWithUpperPipe
   ],
   imports: [
     BrowserModule,
