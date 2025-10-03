@@ -6,13 +6,15 @@ import { App } from './app';
 import { Home } from './home/home';
 import { Contact } from './contact/contact';
 import { BeginWithUpperPipe } from './pipes/begin-with-upper-pipe';
+import { BeginWithDrPipe } from './pipes/begin-with-dr-pipe';
 
 @NgModule({
   declarations: [
     App,
     Home,
     Contact,
-    BeginWithUpperPipe
+    BeginWithUpperPipe,
+    BeginWithDrPipe
   ],
   imports: [
     BrowserModule,

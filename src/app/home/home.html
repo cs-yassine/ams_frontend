@@ -4,6 +4,6 @@
 <p>University : {{university}}</p>
 <p>Nre étudiants : {{nbrEtudiants}}</p>
 <ul>
-    <li *ngFor="let name of names">{{name|beginWithUpper}}</li>
+    <li *ngFor="let name of names">{{name|beginWithDr|uppercase}}</li>
 </ul>
 <button class="btn btn-success" (click)="display()">Cliquer</button>
