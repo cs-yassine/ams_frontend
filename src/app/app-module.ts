@@ -8,6 +8,8 @@ import { Contact } from './contact/contact';
 import { BeginWithUpperPipe } from './pipes/begin-with-upper-pipe';
 import { BeginWithDrPipe } from './pipes/begin-with-dr-pipe';
 import { ListEtudiants } from './list-etudiants/list-etudiants';
+import { ListeEmployers } from './liste-employers/liste-employers';
+import { BeginWithUpper2Pipe } from './pipes/begin-with-upper2-pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ListEtudiants } from './list-etudiants/list-etudiants';
     Contact,
     BeginWithUpperPipe,
     BeginWithDrPipe,
-    ListEtudiants
+    ListEtudiants,
+    ListeEmployers,
+    BeginWithUpper2Pipe
   ],
   imports: [
     BrowserModule,

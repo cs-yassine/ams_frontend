@@ -1,0 +1,22 @@
+<h1 class="text-center mt-3">Ma liste N2</h1>
+  <table class="table table-bordered table-striped text-center">
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Position</th>
+        <th>Salaire</th>
+      </tr>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.nom | beginWithUpper2 }}</td>
+        <td>{{ emp.prenom | beginWithUpper2 }}</td>
+        <td>{{ emp.position }}</td>
+        <td>{{ emp.salaire }}</td>
+        <td>
+          <button class="btn btn-info btn-sm" (click)="afficherInfos(emp)">
+            Afficher
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
