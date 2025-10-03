@@ -10,6 +10,8 @@ import { BeginWithDrPipe } from './pipes/begin-with-dr-pipe';
 import { ListEtudiants } from './list-etudiants/list-etudiants';
 import { ListeEmployers } from './liste-employers/liste-employers';
 import { BeginWithUpper2Pipe } from './pipes/begin-with-upper2-pipe';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { Users } from './users/users';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { BeginWithUpper2Pipe } from './pipes/begin-with-upper2-pipe';
     BeginWithDrPipe,
     ListEtudiants,
     ListeEmployers,
-    BeginWithUpper2Pipe
+    BeginWithUpper2Pipe,
+    Users
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { BeginWithUpper2Pipe } from './pipes/begin-with-upper2-pipe';
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideZonelessChangeDetection()
+    provideZonelessChangeDetection(),
+    provideHttpClient(withInterceptorsFromDi())
   ],
   bootstrap: [App]
 })

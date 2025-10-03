@@ -1,0 +1,26 @@
+<h1 class="text-center mt-3">Liste des utilisateurs</h1>
+<ng-container *ngIf="utilisateurs| async as utilisateurs">
+  <table align="center" *ngIf="utilisateurs.length > 0; else noUsers" border="2" align="center" class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    <tbody>
+      <tr *ngFor="let utilisateur of utilisateurs">
+        <td>{{ utilisateur.id}}</td>
+        <td>{{ utilisateur.name}}</td>
+        <td>{{ utilisateur.username}}</td>
+        <td>{{ utilisateur.email}}</td>
+        <td>{{ utilisateur.address.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
+
+<!-- Message si aucun fournisseur trouvé -->
+<ng-template #noUsers>
+  <p style="text-align: center;">Aucun utilisateur trouvé.</p>
+</ng-template>
