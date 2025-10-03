@@ -1,0 +1,13 @@
+<h1 align="center">Liste des étudiants</h1>
+
+<table align="center" border="1" class="table">
+    <tr><th>Prénom</th><th>Nom</th><th>Email</th><th>Age</th><th>Classe</th><th>Niveau</th></tr>
+    <tr *ngFor="let student of students">
+        <td>{{student.prenom}}</td>
+        <td>{{student.nom}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.classe}}</td>
+        <td>{{student.niveau}}</td>
+    </tr>
+</table>

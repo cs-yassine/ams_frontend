@@ -7,6 +7,7 @@ import { Home } from './home/home';
 import { Contact } from './contact/contact';
 import { BeginWithUpperPipe } from './pipes/begin-with-upper-pipe';
 import { BeginWithDrPipe } from './pipes/begin-with-dr-pipe';
+import { ListEtudiants } from './list-etudiants/list-etudiants';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BeginWithDrPipe } from './pipes/begin-with-dr-pipe';
     Home,
     Contact,
     BeginWithUpperPipe,
-    BeginWithDrPipe
+    BeginWithDrPipe,
+    ListEtudiants
   ],
   imports: [
     BrowserModule,
